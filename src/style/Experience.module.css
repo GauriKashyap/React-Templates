@@ -1,0 +1,13 @@
+.wrapper {
+  background-color: gray;
+}
+
+.header {
+  color: white;
+  width: max-content;
+  margin: auto;
+  font-size: 2.1rem;
+  line-height: 1.875;
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.4rem;
+}

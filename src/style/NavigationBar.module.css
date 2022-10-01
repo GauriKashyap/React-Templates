@@ -1,0 +1,27 @@
+.navbar {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar.bg-active {
+  background: #181d23;
+}
+
+.navbar .wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  padding: 0 2rem;
+}
+
+.navbar .brand {
+  font-size: 1.6rem;
+  color: #fafafa;
+  cursor: default;
+}

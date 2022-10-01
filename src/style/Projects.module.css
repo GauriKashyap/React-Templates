@@ -1,0 +1,157 @@
+.wrapper {
+  background-color: rgba(225, 225, 225, 1);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 25px 30px;
+}
+
+.projectCard {
+  border-radius: 20px 20px 0 0;
+  height: 80%;
+  width: max-content;
+  position: relative;
+  background-color: aliceblue;
+}
+
+.image {
+  border-radius: 20px 20px 0 0;
+  height: calc(15vh + 25px);
+}
+
+.year {
+  background-color: red;
+  color: white;
+  width: min-content;
+  padding: 5px 10px;
+  position: absolute;
+  bottom: 58px;
+  left: 40%;
+}
+
+.Pname {
+  color: black;
+  width: max-content;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.modal {
+  background-color: rgba(66, 58, 58, 0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer {
+  background-color: rgb(230, 217, 217);
+  padding: 30px 50px;
+  position: relative;
+  opacity: 1;
+  width: min-content;
+  margin: auto;
+}
+
+.modalImage {
+  margin-top: 22px;
+  height: calc(25vh + 25px);
+  border-radius: 4px 4px 0 0;
+}
+
+.cardContent {
+  margin: 0 1rem 1rem 1rem;
+}
+
+.cardContent h1 {
+  text-transform: capitalize;
+  font-size: 2rem;
+  margin: 1rem 0 1rem 0;
+  letter-spacing: -2px;
+}
+
+.cardContent p {
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+}
+
+.cardContent p::first-letter {
+  text-transform: capitalize;
+}
+
+.footer {
+  margin-left: 1rem;
+  display: flex;
+}
+.author {
+  order: 1;
+  display: flex;
+  margin-bottom: 1rem;
+}
+.name {
+  margin-top: 15px;
+  margin-left: 5px;
+  text-transform: capitalize;
+  order: 2;
+  color: #444;
+}
+
+.stats {
+  order: 2;
+  display: flex;
+  float: right;
+  margin-left: auto;
+  margin-right: 1rem;
+  margin-top: 12.5px;
+}
+
+.close {
+  position: absolute;
+  right: 32px;
+  top: 12px;
+  width: 12px;
+  height: 12px;
+  opacity: 0.3;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before,
+.close:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+.foot {
+  display: flex;
+  color: white; 
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.redirect {
+  border: rgba(83, 78, 78, 0.5) 1px solid;
+  padding: 10px 20px;
+  color: rgba(31, 28, 28, 0.815);
+}
+
+.redirect:hover {
+  border: rgba(83, 78, 78, 1) 1px solid;
+}

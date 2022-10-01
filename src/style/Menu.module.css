@@ -1,0 +1,237 @@
+.nav {
+  height: 100vh;
+}
+
+.header {
+  padding: 2rem;
+}
+
+.menu {
+  background: #181d23;
+  height: 100%;
+  left: 0;
+  opacity: 0.6;
+  overflow: hidden;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  transition: all 0.7s ease-in-out;
+  visibility: hidden;
+  width: 100%;
+  z-index: 1100;
+}
+.menu.open {
+  opacity: 1;
+  visibility: visible;
+}
+.menu.open li:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.menu.open li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.menu.open li:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.menu.open li:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.menu.open li:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.menu.open li:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.menu.open li:nth-child(7) {
+  animation-delay: 0.7s;
+}
+.menu.open li:nth-child(8) {
+  animation-delay: 0.8s;
+}
+.menu.open li:nth-child(9) {
+  animation-delay: 0.9s;
+}
+.menu.open li:nth-child(10) {
+  animation-delay: 1s;
+}
+.menu.open li {
+  animation-duration: 1s;
+  animation-fillMode: both;
+  animation-name: fadeInUp;
+}
+.menu ul:hover a {
+  opacity: 0.5;
+}
+.menu ul a {
+  -webkit-transform: translateZ(0);
+  transition: opacity 0.3s ease-in-out;
+}
+.menu ul a:hover {
+  opacity: 1;
+}
+.menu .mainNav {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.menu .menuFooter {
+  padding: 2rem;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+.menu .menuFooter ul {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu .menuFooter ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+.menu .menuFooter a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu .mainNav ul {
+  list-style: none;
+  width: max-content;
+  margin: auto;
+  padding: 0;
+}
+.menu .mainNav a {
+  color: black;
+  display: block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 10px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.menu .mainNav a:first {
+  padding-top: 0;
+}
+
+.menu .mainNav li {
+  background: blue;
+  margin-top: 5px;
+  letter-spacing: 2px;
+  overflow: hidden;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.menu .mainNav a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(-1 * ((100%) + 150px));
+  width: 80%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, white, transparent);
+  transform: skewX(35deg);
+  transition: 0.8s;
+}
+
+.menu .mainNav a:hover:before {
+  left: calc(((100%) + 150px));
+}
+
+.menu .mainNav ul:hover li {
+  opacity: 0.3;
+}
+
+.menu .mainNav ul li:hover {
+  opacity: 1;
+  background-color: white;
+}
+
+ul li::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: grey;
+  font-size: 6rem;
+  font-weight: 600;
+  opacity: 0;
+  letter-spacing: 0;
+  transition: 0.4s;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+ul li:hover::before {
+  opacity: 1;
+  z-index: -1;
+  letter-spacing: 25px;
+}
+
+.toggleMenu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  height: 50px;
+  outline: none;
+  padding: 0;
+  pointer-events: initial;
+  position: relative;
+  vertical-align: middle;
+  width: 50px;
+  z-index: 1110;
+}
+.toggleMenu span {
+  background-color: white;
+  content: "";
+  display: block;
+  height: 2px;
+  left: calc(50% - 13px);
+  position: absolute;
+  top: calc(50% - 1px);
+  transform-origin: 50% 50%;
+  transition: background-color 0.2s ease-in-out, top 0.2s 0.2s ease-out,
+    transform 0.2s linear;
+  width: 26px;
+}
+.toggleMenu span:before,
+.toggleMenu span:after {
+  background-color: white;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  transform-origin: 50% 50%;
+  transition: background-color 0.2s ease-in-out, top 0.2s 0.2s ease-out,
+    transform 0.2s linear;
+  width: 26px;
+}
+.toggleMenu span:before {
+  top: 7px;
+}
+.toggleMenu span:after {
+  top: -7px;
+}
+.toggleMenu.active span {
+  background-color: transparent;
+  transition: background 0.2s ease-out;
+}
+.toggleMenu.active span:before,
+.toggleMenu.active span:after {
+  transition: top 0.2s ease-out, transform 0.2s 0.2s ease-out;
+}
+.toggleMenu.active span:before {
+  top: 0;
+  transform: rotate3d(0, 0, 1, -45deg);
+}
+.toggleMenu.active span:after {
+  top: 0;
+  transform: rotate3d(0, 0, 1, 45deg);
+}

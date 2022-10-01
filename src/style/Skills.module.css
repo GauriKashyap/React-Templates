@@ -1,0 +1,36 @@
+.wrapper {
+  background-color: #efe1bd;
+}
+
+.header {
+  color: black;
+  width: max-content;
+  margin: auto;
+  font-size: 2.1rem;
+  line-height: 1.875;
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.4rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 28px 0;
+  padding: 28px 0;
+  gap: 10px;
+}
+
+.skillcard {
+  border: 1px solid rgba(46, 42, 42, 0.61);
+  width: 212px;
+  padding: 42px 42px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  border-radius: 25px;
+  background-color: rgba(61, 57, 57, 0.4);
+}

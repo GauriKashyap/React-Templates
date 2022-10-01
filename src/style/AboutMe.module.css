@@ -1,0 +1,46 @@
+.wrapper {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  margin: 25px 0;
+  width: 100%;
+  padding: calc(20vw - 150px);
+}
+
+.container h5 {
+  color: #ff0077;
+  width: max-content;
+  margin: auto;
+  font-size: 2.1rem;
+  line-height: 1.875;
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.4rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2.5vw;
+}
+
+.subs {
+  font-family: "poppins-semibold", serif;
+  font-size: 1.6rem;
+  color: #6e6e6e;
+  line-height: 1.2;
+}
+
+.image {
+  height: calc(15vh + 10px);
+  width: calc(15vh + 10px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
