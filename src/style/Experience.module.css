@@ -1,9 +1,9 @@
 .wrapper {
-  background-color: gray;
+  background-color: #F5EFE6;
 }
 
 .header {
-  color: white;
+  color: black;
   width: max-content;
   margin: auto;
   font-size: 2.1rem;

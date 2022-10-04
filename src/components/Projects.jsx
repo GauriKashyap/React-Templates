@@ -30,8 +30,12 @@ const ProjectModal = ({ name, isOpen, onClose, children, item }) => {
             </div>
           </div>
           <div className={styles.foot}>
-            <a className={styles.redirect} href={item.github}>Repo</a>
-            <a className={styles.redirect} href={item.demo}>Live</a>
+            <a className={styles.redirect} href={item.github} target="_blank">
+              Repo
+            </a>
+            <a className={styles.redirect} href={item.demo} target="_blank">
+              Live
+            </a>
           </div>
         </div>
       </div>
@@ -74,9 +78,12 @@ const Projects = (props) => {
   return (
     <>
       <div className={styles.wrapper}>
-        {projects.map((project, index, array) => (
-          <Project key={index} project={project} />
-        ))}
+        <h1>Projects</h1>
+        <div className={styles.container}>
+          {projects.map((project, index, array) => (
+            <Project key={index} project={project} />
+          ))}
+        </div>
       </div>
     </>
   );

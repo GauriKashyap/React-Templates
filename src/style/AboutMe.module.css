@@ -1,6 +1,8 @@
 .wrapper {
   margin: auto;
+  background-color: #efe1bd;
   display: flex;
+  height: min-content;
   align-items: center;
   justify-content: center;
 }
@@ -8,7 +10,7 @@
 .container {
   margin: 25px 0;
   width: 100%;
-  padding: calc(20vw - 150px);
+  padding: calc(12vw - 150px) 65px;
 }
 
 .container h5 {
@@ -23,6 +25,8 @@
 
 .row {
   display: flex;
+  flex-wrap: wrap;
+  text-align: center;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;

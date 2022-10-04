@@ -31,16 +31,16 @@ const Menu = (props) => {
         <nav className={styles.mainNav}>
           <ul>
             <li data-text="About me">
-              <a href="#"> About me </a>
+              <a href="#about"> About me </a>
             </li>
             <li data-text="Projects">
-              <a href="#"> Projects </a>
+              <a href="#projects"> Projects </a>
             </li>
             <li data-text="Skills">
-              <a href="#"> Skills </a>
+              <a href="#skills"skills> Skills </a>
             </li>
             <li data-text="Experience">
-              <a href="#"> Experience</a>
+              <a href="#experience"> Experience</a>
             </li>
           </ul>
         </nav>

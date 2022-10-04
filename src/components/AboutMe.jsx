@@ -5,7 +5,7 @@ import styles from "../style/AboutMe.module.css";
 const AboutMe = (props) => {
   return (
     <>
-      <div className={styles.wrapper}>
+      <div className={styles.wrapper} id="about">
         <div className={styles.container}>
           <h5>About Me</h5>
           <div className={styles.row}>

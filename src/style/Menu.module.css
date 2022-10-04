@@ -56,7 +56,7 @@
 }
 .menu.open li {
   animation-duration: 1s;
-  animation-fillMode: both;
+  animation-fillmode: both;
   animation-name: fadeInUp;
 }
 .menu ul:hover a {
@@ -118,7 +118,8 @@
 }
 
 .menu .mainNav li {
-  background: blue;
+  background: #f300b4;
+  color: white;
   margin-top: 5px;
   letter-spacing: 2px;
   overflow: hidden;
